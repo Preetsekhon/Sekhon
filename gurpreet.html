@@ -1,0 +1,53 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script> 
+$(document).ready(function(){
+    $("#animate").click(function(){
+        $("div").animate({left: '250px',background: '#FF0000'});
+		
+    });
+	
+	$("#animateBack").click(function(){
+        $("div").animate({left: '0px',background: '#98bf21'});
+		
+    });
+	
+	$("#drink").click(function(){
+        $("#p1").css("color", "red").slideUp(2000).slideDown(2000);
+    });
+	
+	
+	$("#hide").click(function(){
+        $("p").hide();
+    });
+    $("#show").click(function(){
+        $("p").show();
+    });
+});
+
+</script> 
+</head>
+<body>
+
+<button id="animate">Start Animation</button>
+<button id="animateBack">Rewind</button>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+<button id="drink">Drink</button>
+
+<p>Gurpreet Singh</p>
+<p>Student ID = C0705417</p>
+<p >I am Student in Lambton 
+<br> Current Course = Computer Programming</p>
+<p id="p1"> Hobbies 
+<br>I like to play cricket
+<br>I like to read books</p>
+
+<div style="background:#98bf21;height:70px;width:100px;position:absolute;">  <img src="C:\\Users\Owner\Desktop\Gurpreet_C0705417\ss.jpg" width="350% height="350%"></div>
+
+</body>
+</html>
